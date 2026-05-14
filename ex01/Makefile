@@ -11,8 +11,11 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp Span.hpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+main.o: main.cpp Span.hpp
+	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
+
+Span.o: Span.cpp Span.hpp
+	$(CXX) $(CXXFLAGS) -c Span.cpp -o Span.o
 
 clean:
 	rm -f $(OBJS)

@@ -11,8 +11,8 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp MutantStack.hpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+main.o: main.cpp MutantStack.hpp
+	$(CXX) $(CXXFLAGS) -c main.cpp -o main.o
 
 clean:
 	rm -f $(OBJS)
