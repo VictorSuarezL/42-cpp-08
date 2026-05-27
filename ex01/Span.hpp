@@ -16,7 +16,6 @@ class Span
 		std::vector<int>	_numbers;
 
 	public:
-		Span(void);
 		Span(unsigned int n);
 		Span(const Span &other);
 		~Span(void);

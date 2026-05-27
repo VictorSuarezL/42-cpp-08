@@ -32,10 +32,5 @@ int	main(void)
 	std::stack<int> s(mstack);
 	std::cout << "Copied stack size: " << s.size() << std::endl;
 
-	std::cout << "Reverse: ";
-	for (MutantStack<int>::reverse_iterator rit = mstack.rbegin(); rit != mstack.rend(); ++rit)
-		std::cout << *rit << " ";
-	std::cout << std::endl;
-
 	return 0;
 }

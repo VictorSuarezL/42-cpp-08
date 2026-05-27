@@ -1,9 +1,5 @@
 #include "Span.hpp"
 
-Span::Span(void) : _maxSize(0)
-{
-}
-
 Span::Span(unsigned int n) : _maxSize(n)
 {
 }
